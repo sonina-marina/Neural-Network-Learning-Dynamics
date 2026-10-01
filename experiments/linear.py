@@ -9,14 +9,17 @@ from src.visualisation import plot_linear_training
 xs = np.array([-1, 0, 1, 2, 4], dtype=float)
 ys = linear_function(xs)
 
+target_weight = 3
+target_bias = 1
+
 model = create_linear_model()
 
 history = train_model(
     model,
     xs,
     ys,
-    epochs=100,
-    learning_rate=0.01
+    epochs=1000,
+    learning_rate=0.001
 )
 
 #print(history.losses)
@@ -35,6 +38,18 @@ initial_bias = history.biases[0][0][0]
 final_weight = history.weights[-1][0][0][0]
 final_bias = history.biases[-1][0][0]
 
+weights = [
+    history.weights[epoch][0][0][0]
+    for epoch in range(len(history.weights))
+]
+
+biases = [
+    history.biases[epoch][0][0]
+    for epoch in range(len(history.biases))
+]
+
+print(weights)
+
 plot_linear_training(
     xs, 
     linear_function,
@@ -42,5 +57,9 @@ plot_linear_training(
     initial_bias,
     final_weight,
     final_bias,
-    history.losses
+    history.losses,
+    weights,
+    biases,
+    target_weight,
+    target_bias
 )
