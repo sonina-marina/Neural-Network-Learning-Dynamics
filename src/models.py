@@ -20,6 +20,16 @@ def create_nonlinear_model():
     return model
 
 
+def create_sine_model():
+    model = tf.keras.Sequential([
+        tf.keras.Input(shape=(1,)),
+        tf.keras.layers.Dense(20, activation="tanh"),
+        tf.keras.layers.Dense(1)
+    ])
+
+    return model
+
+
 def create_surface_model():
     model = tf.keras.Sequential([
         tf.keras.layers.Dense(16, activation="relu", input_shape=[2]),

@@ -106,3 +106,56 @@ def plot_nonlinear_training(
     plt.grid()
 
     plt.show()
+
+
+def plot_surface_training(
+    X,
+    Y,
+    Z_target,
+    Z_initial,
+    Z_final,
+    loss_history
+):
+    epochs = np.arange(1, len(loss_history) + 1)
+
+    fig = plt.figure(figsize=(12, 8))
+
+    # Target surface
+    ax1 = fig.add_subplot(2, 2, 1, projection="3d")
+
+    ax1.plot_surface(X, Y, Z_target)
+
+    ax1.set_title("Target function")
+    ax1.set_xlabel("x")
+    ax1.set_ylabel("y")
+    ax1.set_zlabel("z")
+
+    ax2 = fig.add_subplot(2, 2, 2, projection="3d")
+
+    ax2.plot_surface(X, Y, Z_initial)
+
+    ax2.set_title("Initial model")
+    ax2.set_xlabel("x")
+    ax2.set_ylabel("y")
+    ax2.set_zlabel("z")
+
+    ax3 = fig.add_subplot(2, 2, 3, projection="3d")
+
+    ax3.plot_surface(X, Y, Z_final)
+
+    ax3.set_title("Trained model")
+    ax3.set_xlabel("x")
+    ax3.set_ylabel("y")
+    ax3.set_zlabel("z")
+
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax4.plot(epochs, loss_history)
+
+    ax4.set_title("Loss during training")
+    ax4.set_xlabel("Epoch")
+    ax4.set_ylabel("Loss")
+    ax4.grid()
+
+    plt.tight_layout()
+    plt.show()

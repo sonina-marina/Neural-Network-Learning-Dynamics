@@ -1,14 +1,15 @@
 import numpy as np
 
 from src.functions import sin_function
-from src.models import create_nonlinear_model
+from src.models import create_nonlinear_model, create_sine_model
 from src.training import train_model
 from src.visualisation import plot_nonlinear_training
 
 xs = np.linspace(-2 * np.pi, 2 * np.pi, 100)
 ys = sin_function(xs)
 
-model = create_nonlinear_model()
+#model = create_nonlinear_model()
+model = create_sine_model()
 
 y_initial = model.predict(xs, verbose=0).flatten()
 
