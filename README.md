@@ -87,5 +87,23 @@ Figure 3. Linear function approximation after 1000 epochs with a learning rate o
 
 Figure 4. Effect of the learning rate on linear model training. With a higher learning rate of 0.1, the model makes larger parameter updates, which can cause stronger oscillations around the minimum loss. With a learning rate of 0.01, the convergence is smoother.
 
-Figure 5. Quadratic function approximation after 100 epochs. The neural network has started learning the nonlinear relationship, but the approximation is still relatively rough.
+Figure 5. Quadratic function approximation after 1000 epochs with a learning rate 0.001. The neural network has started learning the nonlinear relationship, but the approximation is still relatively rough.
+<img width="987" height="719" alt="image" src="https://github.com/user-attachments/assets/741ac0d7-6c1d-4dad-be48-0e17ef75102b" />
 
+Figure 6. Quadratic function approximation after 1000 epochs with a learning rate 0.001. Increasing the number of epochs improves the approximation and reduces the loss.
+<img width="986" height="711" alt="image" src="https://github.com/user-attachments/assets/e47cb08b-4140-459d-84b3-0864ccc20425" />
+
+Figure 7. Effect of the learning rate on quadratic function training (learning rate 0.1). A smaller learning rate produces smoother convergence, while a larger learning rate causes stronger oscillations in the loss.
+<img width="984" height="721" alt="image" src="https://github.com/user-attachments/assets/fe19d150-1254-48cb-b778-8b86634ffe4b" />
+
+Figure 8. Initial manually selected training points for the sine function. A small set of manually selected points was initially used to test whether the neural network could reproduce the general shape of the sine function.
+<img width="915" height="661" alt="image" src="https://github.com/user-attachments/assets/6f5f93c3-6f18-4fc4-9bdd-a9b9115d3e8e" />
+
+Figure 9. Sine function approximation using the ReLU-based nonlinear model after 1000 epochs. The model captures the general tendency of the function but does not reproduce its smooth periodic shape accurately.
+<img width="864" height="633" alt="image" src="https://github.com/user-attachments/assets/ce56eab9-ef89-4e35-bc86-73090dd3c7eb" />
+
+Figure 11. Sine function approximation using the tanh-based model after 100 epochs. The tanh-based architecture provides a smoother approximation of the sine function compared with the ReLU-based model.
+<img width="975" height="716" alt="image" src="https://github.com/user-attachments/assets/58b7c4cf-e568-48dc-ade0-7a681c871fe9" />
+
+Figure 12. Sine function approximation using the tanh-based model after 1000 epochs. The model provides a closer approximation of the target sine function as training progresses.
+<img width="937" height="686" alt="image" src="https://github.com/user-attachments/assets/4110d6db-c59d-40e4-9fce-d5a1abfd0cb3" />
