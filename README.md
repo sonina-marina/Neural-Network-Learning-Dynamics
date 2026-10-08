@@ -71,3 +71,10 @@ $2.5 \rightarrow 2.8 \rightarrow 3.1 \rightarrow 3.05 \rightarrow 3.01 \rightarr
 Thus, the weight can overshoot the optimal value before converging toward it.
 
 This demonstrates why observing only the final result is not enough to fully understand the training process. Tracking the loss and parameter values over time provides additional insight into how the neural network actually learns.
+
+## Results and Observations
+
+1. Linear Function
+
+Figure 1. Linear function approximation after 100 epochs with a learning rate of 0.01. The model has started approaching the target function, while the learned weight is still noticeably different from the optimal value w=3.
+<img width="993" height="708" alt="image" src="https://github.com/user-attachments/assets/3e702a85-0ea3-4444-a9df-a7147e6a33c1" />
