@@ -78,3 +78,14 @@ This demonstrates why observing only the final result is not enough to fully und
 
 Figure 1. Linear function approximation after 100 epochs with a learning rate of 0.01. The model has started approaching the target function, while the learned weight is still noticeably different from the optimal value w=3.
 <img width="993" height="708" alt="image" src="https://github.com/user-attachments/assets/3e702a85-0ea3-4444-a9df-a7147e6a33c1" />
+
+Figure 2. Linear function approximation after 500 epochs with a learning rate of 0.01. The learned line is closer to the target function, and the weight gradually approaches the optimal value w=3.
+<img width="995" height="709" alt="image" src="https://github.com/user-attachments/assets/99067d50-308f-4f9b-a8c3-ce76e9d3d70b" />
+
+Figure 3. Linear function approximation after 1000 epochs with a learning rate of 0.01. The trained model closely approximates the target function, while the loss approaches a low value and the weight converges toward w=3.
+<img width="986" height="705" alt="image" src="https://github.com/user-attachments/assets/9e3032db-2c59-4c53-b0c1-29e4d0113536" />
+
+Figure 4. Effect of the learning rate on linear model training. With a higher learning rate of 0.1, the model makes larger parameter updates, which can cause stronger oscillations around the minimum loss. With a learning rate of 0.01, the convergence is smoother.
+
+Figure 5. Quadratic function approximation after 100 epochs. The neural network has started learning the nonlinear relationship, but the approximation is still relatively rough.
+
