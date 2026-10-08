@@ -107,3 +107,9 @@ Figure 11. Sine function approximation using the tanh-based model after 100 epoc
 
 Figure 12. Sine function approximation using the tanh-based model after 1000 epochs. The model provides a closer approximation of the target sine function as training progresses.
 <img width="937" height="686" alt="image" src="https://github.com/user-attachments/assets/4110d6db-c59d-40e4-9fce-d5a1abfd0cb3" />
+
+Figure 13. Paraboloid approximation after 100 epochs. The model begins to reproduce the overall shape of the target surface, although noticeable differences remain.
+<img width="1195" height="795" alt="image" src="https://github.com/user-attachments/assets/c5f53815-cf88-41cb-a9e4-e707def859b5" />
+
+Figure 14. Paraboloid approximation after 1000 epochs. With additional training, the predicted surface becomes closer to the target paraboloid and the loss decreases.
+<img width="1197" height="794" alt="image" src="https://github.com/user-attachments/assets/8647b25b-59e4-4297-bcbb-a58df1154c38" />
