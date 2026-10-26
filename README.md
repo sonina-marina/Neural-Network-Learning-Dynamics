@@ -87,7 +87,7 @@ Figure 3. Linear function approximation after 1000 epochs with a learning rate o
 
 Figure 4. Effect of the learning rate on linear model training. With a higher learning rate of 0.1, the model makes larger parameter updates, which can cause stronger oscillations around the minimum loss. With a learning rate of 0.01, the convergence is smoother.
 
-Figure 5. Quadratic function approximation after 1000 epochs with a learning rate 0.001. The neural network has started learning the nonlinear relationship, but the approximation is still relatively rough.
+Figure 5. Quadratic function approximation after 100 epochs with a learning rate 0.001. The neural network has started learning the nonlinear relationship, but the approximation is still relatively rough.
 <img width="987" height="719" alt="image" src="https://github.com/user-attachments/assets/741ac0d7-6c1d-4dad-be48-0e17ef75102b" />
 
 Figure 6. Quadratic function approximation after 1000 epochs with a learning rate 0.001. Increasing the number of epochs improves the approximation and reduces the loss.
